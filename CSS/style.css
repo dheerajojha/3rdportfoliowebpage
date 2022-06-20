@@ -1,0 +1,142 @@
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(44, 23, 23);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 68px;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: tomato;
+}
+
+h3 {
+  font-weight: 30px;
+  background: -webkit-linear-gradient(#eee, rgb(138, 219, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h6 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.5);
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.banner-wrapper {
+  background-image: url("../IMAGES/banner.jpg");
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+  background-attachment: fixed;
+}
+
+.about-wrapper img {
+  max-height: 400px;
+  width: 100%;
+}
+
+.services-wrapper .card {
+  min-height: 270px;
+  height: 100%;
+}
+
+.services-wrapper i {
+  font-size: 40px;
+  color: red;
+}
+
+.header-wrapper .nav-item .nav-link {
+  position: relative;
+  color: gray;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+}
+
+.header-wrapper .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0;
+  background: rgb(237, 103, 25);
+  transition: all 0.4s ease;
+}
+
+.header-wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+  color: #eee;
+}
+.header-wrapper .nav-item .nav-link:hover {
+  color: #eee;
+}
+
+.team-wrapper h2 {
+  color: #eee;
+}
+/* .services-wrapper { */
+/* padding-bottom: 200px; */
+/* } */
+
+.skills-wrapper {
+  padding: 150px;
+}
+
+.services-wrapper {
+  padding: 150px;
+}
+
+/* animations and hover */
+
+.card img:hover {
+  transform: scale(0.9);
+  transition: 0.8s ease;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
